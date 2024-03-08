@@ -142,7 +142,19 @@ function printStringReturnNumber($string)
 }
 
 $mn= printStringReturnNumber("Строка: ");
-echo "Мое число равно= $mn";
+echo "Мое число равно = $mn";
 echo "\n";
 
 //task 16
+function increaseEnthusiasm($string)
+{
+    $string .= "!";
+    return $string;
+}
+echo "\n", increaseEnthusiasm("с 8 марта <3!!!");
+function repeatThreeTimes($string){
+    return $string . $string. $string;
+}
+echo "\n", repeatThreeTimes("любви,денег,здоровья!");
+echo "\n", increaseEnthusiasm(repeatThreeTimes("любви,денег,здоровья!"));
+
