@@ -77,3 +77,9 @@ echo "до сотых: ", round(sqrt(379,2));
 echo "\n";
 
 
+$root = sqrt(587);
+$rounding =  Array('floor' => floor($root),  'ceil' => ceil($root));
+
+
+
+
