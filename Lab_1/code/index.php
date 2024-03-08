@@ -88,6 +88,12 @@ $maxi = max($array1);
 echo "мин $mini, макс $maxi значения";
 echo "\n";
 
+echo "Рандомное число : ", rand(1, 100), "\n";
+
+$ar = [];
+for($i=0; $i <= 9; $i++) {
+    $ar[] = rand(1, 100);
+}
 
 
 
