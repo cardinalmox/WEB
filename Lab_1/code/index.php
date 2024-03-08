@@ -9,7 +9,7 @@ $order = & $very_bad_unclear_name;
 $order .= ",cola and one hamburger";
 
 echo "\nYour order is: $very_bad_unclear_name.";
-
+echo "\n";
 
 //task 2
 
@@ -24,7 +24,8 @@ echo "\n" , $number1 + $number3;
 
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo "\n Разница предыдущего и этого месяца : " , $last_month - $this_month;
+echo "\nРазница предыдущего и этого месяца : " , $last_month - $this_month;
+echo "\n";
 
 //task 11
 $num_languages = 4;
@@ -62,6 +63,7 @@ echo "\n$st1";
 
 $st2 = sqrt(245);
 echo "\n$st2";
+echo "\n";
 
 $array = [4, 2, 5, 19, 13, 0, 10];
 $sum = 0;
@@ -71,10 +73,10 @@ foreach ($array as $value) {
 $st3 = sqrt($sum);
 echo "\n $st3";
 echo "\n";
-echo "Квадратный корень из 379: ", sqrt (379);
-echo "Округляем рез-т до целых: ", round(sqrt(379));
-echo "до десятых: ", round(sqrt(379,1));
-echo "до сотых: ", round(sqrt(379,2));
+echo "\nКвадратный корень из 379: ", sqrt (379) ;
+echo "\nОкругляем рез-т до целых: ", round(sqrt(379));
+echo "\nдо десятых: ", round(sqrt(379),1);
+echo "\nдо сотых: ", round(sqrt(379),2);
 echo "\n";
 
 
@@ -140,5 +142,7 @@ function printStringReturnNumber($string)
 }
 
 $mn= printStringReturnNumber("Строка: ");
-echo "Мое число = $mn";
+echo "Мое число равно= $mn";
 echo "\n";
+
+//task 16
