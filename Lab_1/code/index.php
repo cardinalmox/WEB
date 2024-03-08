@@ -31,7 +31,8 @@ $num_languages = 4;
 $months = 11;
 $days = $months * 16;
 $days_per_language = $days / $num_languages;
-echo "days per language: {$days_per_language}\n";
+echo "в среднем дней на язык: {$days_per_language}";
+echo "\n";
 
 //task 12
 echo 8**2, "\n";
@@ -88,17 +89,18 @@ $maxi = max($array1);
 echo "мин $mini, макс $maxi значения";
 echo "\n";
 
-echo "Рандомное число : ", rand(1, 100), "\n";
+echo "Рандомное число : ", rand(1, 100);
+echo "\n";
 
 $ar = [];
-for($i=0; $i <= 9; $i++) {
+for($i = 0; $i <= 9; $i++) {
     $ar[] = rand(1, 100);
 }
 echo "\n";
 
 $a = 8;
 $b = 20;
-echo "Модуль разности равен: ",abs($a-$b), "\n";
+echo "Модуль разности равен: ",abs($a-$b);
 echo "\n";
 
 $array2 =  [1, 2, -1, -2, 3, -3];
@@ -106,6 +108,7 @@ $array3 = [];
 for($i = 0; $i <= 5; $i++) {
     $array3[] = abs($array2[$i]);
 }
+echo "\n";
 
 
 
