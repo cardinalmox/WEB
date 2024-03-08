@@ -132,5 +132,13 @@ while ($su <= 10){
 echo "нужно сложить первые $ct чисел";
 echo "\n";
 
+//task 15
+function printStringReturnNumber($string)
+{
+    echo $string;
+    return 8;
+}
 
-
+$mn= printStringReturnNumber("Строка: ");
+echo "Мое число = $mn";
+echo "\n";
