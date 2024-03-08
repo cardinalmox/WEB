@@ -157,4 +157,35 @@ function repeatThreeTimes($string){
 }
 echo "\n", repeatThreeTimes("0000");
 echo "\n", increaseEnthusiasm(repeatThreeTimes("0000"));
+echo "\n";
 
+function cut($str, $length = 10)
+{
+    return substr($str, 0, $length);
+}
+echo "\n", cut("anime", 2);
+function printArr($arr, $count=0){
+    echo"\n {$count}: {$arr[$count]}";
+    if($count+1 != sizeof($arr)){
+        printArr($arr, $count+1);}
+}
+printArr($array3);
+
+function summa($int){
+    $sum = 0;
+    while ($int > 0)
+    {
+        $sum += $int % 10;
+        $int = (int)($int / 10);
+    }
+    if ($sum > 9)
+    {
+        return summa($sum);
+    }
+    return $sum;
+}
+$x = summa(666);
+echo "\n",$x;
+echo "\n";
+
+//task 17
