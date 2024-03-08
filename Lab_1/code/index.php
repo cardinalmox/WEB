@@ -21,3 +21,7 @@ echo "$number2";
 $number3 = 4;
 
 echo "\n" , $number1 + $number3;
+
+$last_month = 1187.23;
+$this_month = 1089.98;
+echo "\n Разница предыдущего и этого месяца : " , $last_month - $this_month;
