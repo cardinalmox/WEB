@@ -48,3 +48,18 @@ echo "\n" , $answer;
 echo "\n";
 
 //task 14
+$a = 10;
+$b = 3;
+$c = $a % $b;
+if ($c == 0)
+    echo "Делится";
+else
+    echo "Делится с остатком,равному $c";
+
+$st1 = pow(2,10);
+echo "\n$st1";
+
+$st2 = sqrt(245);
+echo "\n$st2";
+
+
