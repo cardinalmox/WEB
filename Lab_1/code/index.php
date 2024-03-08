@@ -62,4 +62,18 @@ echo "\n$st1";
 $st2 = sqrt(245);
 echo "\n$st2";
 
+$array = [4, 2, 5, 19, 13, 0, 10];
+$sum = 0;
+foreach ($array as $value) {
+    $sum += $value ** 2;
+}
+$st3 = sqrt($sum);
+echo "\n $st3";
+echo "\n";
+echo "Квадратный корень из 379: ", sqrt (379);
+echo "Округляем рез-т до целых: ", round(sqrt(379));
+echo "до десятых: ", round(sqrt(379,1));
+echo "до сотых: ", round(sqrt(379,2));
+echo "\n";
+
 
