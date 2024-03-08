@@ -151,10 +151,10 @@ function increaseEnthusiasm($string)
     $string .= "!";
     return $string;
 }
-echo "\n", increaseEnthusiasm("с 8 марта <3!!!");
+echo "\n", increaseEnthusiasm("с 8 марта <3");
 function repeatThreeTimes($string){
     return $string . $string. $string;
 }
-echo "\n", repeatThreeTimes("любви,денег,здоровья!");
-echo "\n", increaseEnthusiasm(repeatThreeTimes("любви,денег,здоровья!"));
+echo "\n", repeatThreeTimes("0000");
+echo "\n", increaseEnthusiasm(repeatThreeTimes("0000"));
 
