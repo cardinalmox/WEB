@@ -46,3 +46,5 @@ $answer /= 2;
 $answer -= $my_num;
 echo "\n" , $answer;
 echo "\n";
+
+//task 14
