@@ -189,3 +189,57 @@ echo "\n",$x;
 echo "\n";
 
 //task 17
+function fillArray($val, $cnt)
+{
+    $array = [];
+    for ($i = 0; $i < $cnt; $i++)
+    {
+        $array[] = str_repeat($val, $i + 1);
+    }
+    return $array;
+}
+
+foreach (fillArray("x", 5) as $elka) echo "\n$elka";
+echo "\n";
+
+$array5 =  [[1, 2, 3], [4, 5], [6]];
+function Summ(array $arr): int {
+    $ct = 0;
+    foreach ($arr as $array5) {
+        foreach ($array5 as $b) {
+            $ct += $b;
+        }
+    }
+    return $ct;
+}
+echo"\nСумма элементов массива равна: ",Summ($array5);
+echo "\n";
+
+function crArr($size, $chunk_size){
+    if($size % $chunk_size !=0){
+        return;
+    }
+    $arr = [];
+    $counter = 1;
+
+    for($i = 0; $i <= (int)($size / $chunk_size)-1; $i++){
+        $subarr = [];
+
+        for($j=0; $j <= $chunk_size-1; $j++){
+            $subarr[] = $counter;
+            $counter++;
+        }
+        $arr[] = $subarr;
+    }
+
+    foreach ($arr as $subar){
+        foreach ($subar as $el){
+            echo"\n", " {$el}";
+        }
+    }
+}
+
+crArr(9, 3);
+
+
+
