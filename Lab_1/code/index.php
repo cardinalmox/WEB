@@ -11,5 +11,8 @@ echo "\nYour order is: $very_bad_unclear_name.";
 
 
 //task 2
+$number = 8;
+echo "$number";
+echo "\n";
 
 
