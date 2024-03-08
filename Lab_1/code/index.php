@@ -240,6 +240,16 @@ function crArr($size, $chunk_size){
 }
 
 crArr(9, 3);
+echo"\n";
 
+
+$array7 = [2, 5, 3, 9];
+$result = ($array[0] * $array[1]) + ($array[2] * $array[3]);
+echo "Результат: $result";
+echo"\n";
+
+$user = Array('name'=> "Нурсултан", 'surname'=>"Назарбаев", 'patronymic' => "Абишевич");
+echo"{$user['name']} {$user['surname']} {$user['patronymic']}";
+echo"\n";
 
 
