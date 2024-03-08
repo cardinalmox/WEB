@@ -79,6 +79,16 @@ echo "\n";
 
 $root = sqrt(587);
 $rounding =  Array('floor' => floor($root),  'ceil' => ceil($root));
+echo "\n";
+
+$array1 = [4, -2, 5, 19, -130, 0, 10];
+$mini = min($array1);
+$maxi = max($array1);
+
+echo "мин $mini, макс $maxi значения";
+echo "\n";
+
+
 
 
 
