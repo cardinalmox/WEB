@@ -17,6 +17,7 @@ $number1 = 8;
 echo "$number1";
 echo "\n";
 $number2 = 20.5;
+echo "$number2";
+$number3 = 4;
 
-
-
+echo "\n" , $number1 + $number3;
