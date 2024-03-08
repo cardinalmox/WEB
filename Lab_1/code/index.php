@@ -63,7 +63,7 @@ echo "\n$st1";
 
 $st2 = sqrt(245);
 echo "\n$st2";
-echo "\n";
+
 
 $array = [4, 2, 5, 19, 13, 0, 10];
 $sum = 0;
@@ -263,4 +263,39 @@ echo"Последний и предпоследний: $array8[4],$array8[3]";
 echo"\n";
 
 //task 18
+function inty($n, $m){
+    if ($n + $m >10)
+        return "Cумма больше 10)))";
+    else
+        return "Сумма меньше 10(((";
+}
+$n1 = inty(5, 3);
+echo"\n",$n1;
 
+function same($n, $m){
+    if ($n == $m)
+        return "Числа равны)))";
+    else
+        return "Числа не равны(((";
+}
+$m1 = same(5, 3);
+echo"\n",$m1;
+echo"\n";
+
+$test =0;
+if ($test == 0) echo 'верно';
+echo"\n";
+
+$age = 97;
+if ($age <10 or $age>99)
+    echo "Вы не дееспособны";
+else
+    $sum = 0;
+while ($age > 0)
+{
+    $sum += $age % 10;
+    $age = (int)($age / 10);
+}
+if ($sum > 9) echo"\nсумма цифр двузначна: $sum";
+else echo"\nсумма цифр однозначна: $sum";
+echo "\n";
