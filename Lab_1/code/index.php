@@ -244,7 +244,7 @@ echo"\n";
 
 
 $array7 = [2, 5, 3, 9];
-$result = ($array[0] * $array[1]) + ($array[2] * $array[3]);
+$result = ($array7[0] * $array7[1]) + ($array7[2] * $array7[3]);
 echo "Результат: $result";
 echo"\n";
 
@@ -252,4 +252,15 @@ $user = Array('name'=> "Нурсултан", 'surname'=>"Назарбаев", 'p
 echo"{$user['name']} {$user['surname']} {$user['patronymic']}";
 echo"\n";
 
+$date = Array('year'=> "2024", 'month'=>"03", 'day' => "09");
+echo"{$date['year']} {$date['month']} {$date['day']}";
+echo"\n";
+
+$array8 = ['a', 'b', 'c', 'd', 'e'];
+echo "Кол-о элементов : ",count($array8);
+echo"\n";
+echo"Последний и предпоследний: $array8[4],$array8[3]";
+echo"\n";
+
+//task 18
 
