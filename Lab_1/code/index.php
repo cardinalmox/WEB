@@ -315,3 +315,9 @@ while($c < $cs){
     $c +=1;
 }
 echo"\n";
+
+//task 20
+$array20 = [1,2,7,6,5,10,4];
+$sa = array_sum($array20)/count($array20);
+echo"\nСреднее арифмитическое равно: ",$sa;
+
