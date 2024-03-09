@@ -305,3 +305,13 @@ if (count($array9) == 3)
     echo"Сумма элементов массива:", array_sum($array9);
 echo"\n";
 
+//task 19
+$cs = 20;
+$c = 0;
+$string = "x";
+while($c < $cs){
+    echo "\n",$string;
+    $string = $string."x";
+    $c +=1;
+}
+echo"\n";
