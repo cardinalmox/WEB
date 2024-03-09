@@ -318,6 +318,12 @@ echo"\n";
 
 //task 20
 $array20 = [1,2,7,6,5,10,4];
-$sa = array_sum($array20)/count($array20);
+$sa = array_sum($array20) / count($array20);
 echo"\nСреднее арифмитическое равно: ",$sa;
+
+$perv = 1;
+$posl = 100;
+$ap = ((2 * $perv + ($posl - 1)) * $posl)/2;
+echo"\nСумма арифметической прогрессии равна: $ap";
+
 
