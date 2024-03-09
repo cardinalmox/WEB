@@ -296,6 +296,12 @@ while ($age > 0)
     $sum += $age % 10;
     $age = (int)($age / 10);
 }
-if ($sum > 9) echo"\nсумма цифр двузначна: $sum";
-else echo"\nсумма цифр однозначна: $sum";
+if ($sum > 9) echo"\nСумма цифр двузначна: $sum";
+else echo"\nСумма цифр однозначна: $sum";
 echo "\n";
+
+$array9= [8, 9, 3];
+if (count($array9) == 3)
+    echo"Сумма элементов массива:", array_sum($array9);
+echo"\n";
+
