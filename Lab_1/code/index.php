@@ -346,4 +346,10 @@ $array15 = [$alp['a'], $alp['b'], $alp['c'], $alp['d'], $alp['e'], $alp['f'], $a
 echo"Массив цифар: ";
 echo"[ ";
 echo implode(" ", $array15);echo"]";
+echo"\n";
 
+$z = '1234567890';
+
+$sum_z = (int)substr($z,0,2) + (int)substr($z,2,2)
+    + (int)substr($z,4,2) + (int)substr($z,6,2) + (int)substr($z,8,2);
+echo"cумма пар: $sum_z";
