@@ -36,7 +36,7 @@ echo "в среднем дней на язык: {$days_per_language}";
 echo "\n";
 
 //task 12
-echo 8**2, "\n";
+echo 8 ** 2, "\n";
 
 //task 13
 $my_num = 8;
@@ -53,7 +53,7 @@ echo "\n";
 $a = 10;
 $b = 3;
 $c = $a % $b;
-if ($c == 0)
+if (0 === $c)
     echo "Делится";
 else
     echo "Делится с остатком,равному $c";
@@ -95,14 +95,14 @@ echo "Рандомное число : ", rand(1, 100);
 echo "\n";
 
 $ar = [];
-for($i = 0; $i <= 9; $i++) {
+for($i = 0; $i < 10; $i++) {
     $ar[] = rand(1, 100);
 }
 echo "\n";
 
 $a = 8;
 $b = 20;
-echo "Модуль разности равен: ",abs($a-$b);
+echo "Модуль разности равен: ",abs($a - $b);
 echo "\n";
 
 $array2 =  [1, 2, -1, -2, 3, -3];
@@ -115,8 +115,8 @@ echo "\n";
 $ch = 64;
 $arch = [];
 echo "Делители числа ch: ";
-for($i=1; $i <= $ch / 2 + 1; $i++) {
-    if ($ch % $i == 0) {
+for($i = 1; $i <= $ch / 2 + 1; $i++) {
+    if (0 === $ch % $i ) {
         $arch[] = $i;
         echo "{$i} ";
     }
@@ -127,7 +127,7 @@ echo "\n";
 $nu = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $su = 0;
 $ct = 0;
-while ($su <= 10){
+while (10 >=$su){
     $su += $nu[$ct];
     $ct += 1;
 }
@@ -164,21 +164,21 @@ function cut($str, $length = 10)
     return substr($str, 0, $length);
 }
 echo "\n", cut("anime", 2);
-function printArr($arr, $count=0){
+function printArr($arr, $count = 0){
     echo"\n {$count}: {$arr[$count]}";
-    if($count+1 != sizeof($arr)){
-        printArr($arr, $count+1);}
+    if($count + 1 != sizeof($arr)){
+        printArr($arr, $count + 1);}
 }
 printArr($array3);
 
 function summa($int){
     $sum = 0;
-    while ($int > 0)
+    while (0 < $int)
     {
         $sum += $int % 10;
         $int = (int)($int / 10);
     }
-    if ($sum > 9)
+    if (9 < $sum)
     {
         return summa($sum);
     }
@@ -216,13 +216,13 @@ echo"\nСумма элементов массива равна: ",Summ($array5);
 echo "\n";
 
 function crArr($size, $chunk_size){
-    if($size % $chunk_size !=0){
+    if($size % $chunk_size != 0){
         return;
     }
     $arr = [];
     $counter = 1;
 
-    for($i = 0; $i <= (int)($size / $chunk_size)-1; $i++){
+    for($i = 0; $i < (int)($size / $chunk_size); $i++){
         $subarr = [];
 
         for($j=0; $j <= $chunk_size-1; $j++){
@@ -257,14 +257,14 @@ echo"{$date['year']} {$date['month']} {$date['day']}";
 echo"\n";
 
 $array8 = ['a', 'b', 'c', 'd', 'e'];
-echo "Кол-о элементов : ",count($array8);
+echo "Кол-во элементов : ",count($array8);
 echo"\n";
 echo"Последний и предпоследний: $array8[4],$array8[3]";
 echo"\n";
 
 //task 18
 function inty($n, $m){
-    if ($n + $m >10)
+    if (10 < $n + $m)
         return "Cумма больше 10)))";
     else
         return "Сумма меньше 10(((";
@@ -273,7 +273,7 @@ $n1 = inty(5, 3);
 echo"\n",$n1;
 
 function same($n, $m){
-    if ($n == $m)
+    if ($n === $m)
         return "Числа равны)))";
     else
         return "Числа не равны(((";
@@ -282,26 +282,26 @@ $m1 = same(5, 3);
 echo"\n",$m1;
 echo"\n";
 
-$test =0;
-if ($test == 0) echo 'верно';
+$test = 0;
+if (0 === $test) echo 'верно';
 echo"\n";
 
 $age = 97;
-if ($age <10 or $age>99)
+if (10 > $age or 99 < $age)
     echo "Вы не дееспособны";
 else
     $sum = 0;
-while ($age > 0)
+while (0 < $age)
 {
     $sum += $age % 10;
     $age = (int)($age / 10);
 }
-if ($sum > 9) echo"\nСумма цифр двузначна: $sum";
+if (10 < $sum) echo"\nСумма цифр двузначна: $sum";
 else echo"\nСумма цифр однозначна: $sum";
 echo "\n";
 
 $array9= [8, 9, 3];
-if (count($array9) == 3)
+if (3 === count($array9))
     echo"Сумма элементов массива:", array_sum($array9);
 echo"\n";
 
@@ -312,7 +312,7 @@ $string = "x";
 while($c < $cs){
     echo "\n",$string;
     $string = $string."x";
-    $c +=1;
+    $c += 1;
 }
 echo"\n";
 
@@ -324,7 +324,7 @@ echo"\n";
 
 $perv = 1;
 $posl = 100;
-$ap = ((2 * $perv + ($posl - 1)) * $posl)/2;
+$ap = ((2 * $perv + ($posl - 1)) * $posl) / 2;
 echo"\nСумма арифметической прогрессии равна: $ap";
 echo"\n";
 
