@@ -25,3 +25,20 @@
                     echo "<option value=\"$name\">$name</option>";
                     }
                 }
+                ?>
+            </select><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="description">Description:</label><br>
+            <textarea rows="5" name="description" id="description" required></textarea><br>
+            <input type="submit" value="Save"><br>
+        </form>
+    </div>
+    <div id="table">
+        <table>
+            <thead>
+            <th>Email</th>
+            <th>Category</th>
+            <th>Title</th>
+            <th>Description</th>
+            </thead>
