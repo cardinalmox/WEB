@@ -13,19 +13,9 @@
         <input type="email" name="email" required>
         <label for="category">Category:</label>
         <select name="category" required>
-            <?php
-            //TASK3
-            $directoryPath = "./categories/";
-            if (is_dir($directoryPath))
-            {
-                $subdirectories = array_filter(glob($directoryPath . '*'), 'is_dir');
-                foreach ($subdirectories as $subdirectory)
-                {
-                    $name = basename($subdirectory);
-                    echo "<option value=\"$name\">$name</option>";
-                }
-            }
-            ?>
+            <option value="cars">Cars</option>
+            <option value="others">Others</option>
+            <option value="real estate">Real Estate</option>
         </select><br>
         <label for="title">Title:</label><br>
         <input type="text" id="title" name="title" required><br>
@@ -42,27 +32,26 @@
         <th>Title</th>
         <th>Description</th>
         </thead>
+        <tbody>
         <?php
-        $categories = ['cars', 'others', 'real estate'];
-        foreach ($categories as $category) {
-            $directory = "./categories/$category";
-            if (is_dir($directory)) {
-                $files = scandir($directory);
-                foreach ($files as $file) {
-                    if ($file != '.' && $file != '..') {
-                        $content = file_get_contents("$directory/$file");
-                        $values = explode("\n", $content);
-                        echo "<tbody>";
-                        echo "<td>{$values[0]}</td>";
-                        echo "<td>$category</td>";
-                        echo "<td>{$values[1]}</td>";
-                        echo "<td>{$values[2]}</td>";
-                        echo "</tbody>";
-                    }
-                }
+        $mysqli = new mysqli("db", "root", "123", "web");
+        $sql = "SELECT email, category, title, description FROM ad";
+        $result = $mysqli->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($row["email"]) . "</td>";
+                echo "<td>" . htmlspecialchars($row["category"]) . "</td>";
+                echo "<td>" . htmlspecialchars($row["title"]) . "</td>";
+                echo "<td>" . htmlspecialchars($row["description"]) . "</td>";
+                echo "</tr>";
             }
+        } else {
+            echo "NO RESULT";
         }
+        $mysqli->close();
         ?>
+        </tbody>
     </table>
 </div>
 </body>
