@@ -14,10 +14,15 @@ $email = $_POST['email'];
 $category = $_POST['category'];
 $title = $_POST['title'];
 $description = $_POST['description'];
-$category_folder = "./categories/$category";
-mkdir($category_folder, 0777, true);
-$file_name = "$category_folder/$title.txt";
-$content = "$email\n$title\n$description";
-file_put_contents($file_name, $content);
+$mysqli = new mysqli("db", "root", "123", "web");
+$stmt = $mysqli->prepare("INSERT INTO ad (email, title, description, category) VALUES (?, ?, ?, ?)");
+$stmt->bind_param("ssss", $email, $title, $description, $category);
+if ($stmt->execute() === TRUE) {
+    ToHome();
+} else {
+    echo "Error: " . $stmt->error;
+}
+$stmt->close();
+$mysqli->close();
 ToHome();
 ?>
